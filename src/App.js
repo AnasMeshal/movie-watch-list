@@ -25,10 +25,8 @@ function App() {
       <div className="container">
         <div className="row mt-3">
         <div className="col-md-6 col-sm-12 mb-3">
-        {/* <SearchBar label="Movies To Watch with Yousif  🔍" setQuery={setQuery}/> */}
           <MovieList type={true} />
           </div> <div className="col-md-6 col-sm-12 mb-3">
-            {/* <SearchBar label="Movies Watched with Anas  🔎" setQuery={setQuery}/> */}
           <MovieList type={false} />
           </div>
         </div>

@@ -10,7 +10,7 @@ import SearchBar from "./SearchBar";
 import movieStore from "../stores/movieStore";
 
 //Styles
-import { DeleteSpanner, Spanner, ListTitle, ListItem, WarningMessage } from "../styles";
+import { DeleteSpanner, Spanner, ListTitle, ListItem, WarningMessage, Lable } from "../styles";
 
 const MovieList = ({ type }) => {
 
@@ -21,11 +21,11 @@ const MovieList = ({ type }) => {
       <li className="list-group-item d-flex justify-content-between align-items-center">
 <h4>{movie.name}</h4>
         <div className="btn-group btn-group-toggle" data-toggle="buttons">
-          <label className="btn active">
+          <Lable className="btn active">
             <DeleteSpanner className="badge">
               <DeleteButton movie={movie} />
             </DeleteSpanner>
-          </label>
+          </Lable>
           <label className="btn active">
             <Spanner className="badge">
               <WatchButton label="Watched" movie={movie} />
@@ -39,11 +39,11 @@ const MovieList = ({ type }) => {
       <li className="list-group-item d-flex justify-content-between align-items-center">
         <h4>{movie.name}</h4>
         <div className="btn-group btn-group-toggle" data-toggle="buttons">
-          <label className="btn active">
+          <Lable className="btn active">
             <DeleteSpanner className="badge">
               <DeleteButton movie={movie} />
             </DeleteSpanner>
-          </label>
+          </Lable>
           <label className="btn active">
             <Spanner className="badge">
               <WatchButton label="Unwatch" movie={movie} />

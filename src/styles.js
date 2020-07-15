@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
 body {
   color: black;
   background-color: #EAF0F1;
+  user-select: none;
+  user-drag: none;
 }
 `;
 
@@ -100,5 +102,9 @@ height: 45px;
 
 export const WarningMessage = styled.h4`
 margin-top: 10px;
+`;
 
+export const Lable = styled.label`
+padding-right: 0px;
+padding-left: 0px;
 `;

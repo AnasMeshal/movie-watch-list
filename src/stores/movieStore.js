@@ -5,6 +5,7 @@ import movies from "../movies";
 
 class MovieStore {
   movies = movies;
+  idCounter = movies.length + 1;
 
   deleteMovie = (movie) => {
       this.movies = this.movies.filter((_movie) => _movie.id !== movie.id);
@@ -18,10 +19,11 @@ class MovieStore {
   addMovie = (newMovie) => {
     const newNewMovie = {
       name: newMovie,
-      id: this.movies[this.movies.length - 1].id + 1,
+      id: this.idCounter,
       watched: false,
     };
     this.movies.push(newNewMovie);
+    this.idCounter++;
   };
 }
 
