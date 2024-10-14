@@ -9,11 +9,10 @@ import AddButton from "./components/buttons/AddButton";
 import MovieList from "./components/MovieList";
 
 function App() {
-
   return (
     <div className="App">
       <GlobalStyle />
-      <Title>Movie Watch List</Title>
+      <Title>Movie Watch List amazing app</Title>
       <div className="container">
         <div className="row">
           <AddButtonWrapper>
@@ -24,10 +23,11 @@ function App() {
 
       <div className="container">
         <div className="row mt-3">
-        <div className="col-md-6 col-sm-12 mb-3">
-          <MovieList type={true} />
-          </div> <div className="col-md-6 col-sm-12 mb-3">
-          <MovieList type={false} />
+          <div className="col-md-6 col-sm-12 mb-3">
+            <MovieList type={true} />
+          </div>{" "}
+          <div className="col-md-6 col-sm-12 mb-3">
+            <MovieList type={false} />
           </div>
         </div>
       </div>
